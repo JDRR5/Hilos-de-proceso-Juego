@@ -32,7 +32,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.TIMER_UNO = new System.Windows.Forms.Timer(this.components);
             this.Pelota = new System.Windows.Forms.PictureBox();
-            this.BTN_DESPLAZAR = new System.Windows.Forms.Button();
             this.Raqueta = new System.Windows.Forms.PictureBox();
             this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.Pelota)).BeginInit();
@@ -57,17 +56,6 @@
             this.Pelota.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.Pelota.TabIndex = 2;
             this.Pelota.TabStop = false;
-            // 
-            // BTN_DESPLAZAR
-            // 
-            this.BTN_DESPLAZAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BTN_DESPLAZAR.Location = new System.Drawing.Point(264, 450);
-            this.BTN_DESPLAZAR.Margin = new System.Windows.Forms.Padding(2);
-            this.BTN_DESPLAZAR.Name = "BTN_DESPLAZAR";
-            this.BTN_DESPLAZAR.Size = new System.Drawing.Size(298, 56);
-            this.BTN_DESPLAZAR.TabIndex = 3;
-            this.BTN_DESPLAZAR.Text = "DESPLAZAR";
-            this.BTN_DESPLAZAR.UseVisualStyleBackColor = true;
             // 
             // Raqueta
             // 
@@ -98,7 +86,6 @@
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(740, 523);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.BTN_DESPLAZAR);
             this.Controls.Add(this.Raqueta);
             this.Controls.Add(this.Pelota);
             this.Margin = new System.Windows.Forms.Padding(2);
@@ -112,7 +99,6 @@
 
         #endregion
         private System.Windows.Forms.PictureBox Pelota;
-        private System.Windows.Forms.Button BTN_DESPLAZAR;
         public System.Windows.Forms.Timer TIMER_UNO;
         private System.Windows.Forms.PictureBox Raqueta;
         private System.Windows.Forms.Button button1;
