@@ -31,41 +31,64 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.TIMER_UNO = new System.Windows.Forms.Timer(this.components);
-            this.IMG1 = new System.Windows.Forms.PictureBox();
-            this.TMR_DESPLAZAR = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.IMG1)).BeginInit();
+            this.Pelota = new System.Windows.Forms.PictureBox();
+            this.BTN_DESPLAZAR = new System.Windows.Forms.Button();
+            this.Raqueta = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.Pelota)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Raqueta)).BeginInit();
             this.SuspendLayout();
             // 
             // TIMER_UNO
             // 
-            this.TIMER_UNO.Interval = 1;
+            this.TIMER_UNO.Interval = 40;
             this.TIMER_UNO.Tick += new System.EventHandler(this.TIMER_UNO_Tick);
             // 
-            // IMG1
+            // Pelota
             // 
-            this.IMG1.BackColor = System.Drawing.Color.Transparent;
-            this.IMG1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.IMG1.Cursor = System.Windows.Forms.Cursors.Arrow;
-            this.IMG1.Image = ((System.Drawing.Image)(resources.GetObject("IMG1.Image")));
-            this.IMG1.Location = new System.Drawing.Point(109, 21);
-            this.IMG1.Margin = new System.Windows.Forms.Padding(2);
-            this.IMG1.Name = "IMG1";
-            this.IMG1.Size = new System.Drawing.Size(390, 377);
-            this.IMG1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.IMG1.TabIndex = 2;
-            this.IMG1.TabStop = false;
+            this.Pelota.BackColor = System.Drawing.Color.Transparent;
+            this.Pelota.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Pelota.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.Pelota.Image = ((System.Drawing.Image)(resources.GetObject("Pelota.Image")));
+            this.Pelota.Location = new System.Drawing.Point(40, 53);
+            this.Pelota.Margin = new System.Windows.Forms.Padding(2);
+            this.Pelota.Name = "Pelota";
+            this.Pelota.Size = new System.Drawing.Size(133, 149);
+            this.Pelota.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Pelota.TabIndex = 2;
+            this.Pelota.TabStop = false;
             // 
-            // TMR_DESPLAZAR
+            // BTN_DESPLAZAR
             // 
-            this.TMR_DESPLAZAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TMR_DESPLAZAR.Location = new System.Drawing.Point(264, 450);
-            this.TMR_DESPLAZAR.Margin = new System.Windows.Forms.Padding(2);
-            this.TMR_DESPLAZAR.Name = "TMR_DESPLAZAR";
-            this.TMR_DESPLAZAR.Size = new System.Drawing.Size(298, 56);
-            this.TMR_DESPLAZAR.TabIndex = 3;
-            this.TMR_DESPLAZAR.Text = "DESPLAZAR";
-            this.TMR_DESPLAZAR.UseVisualStyleBackColor = true;
-            this.TMR_DESPLAZAR.Click += new System.EventHandler(this.TMR_DESPLAZAR_Click);
+            this.BTN_DESPLAZAR.Font = new System.Drawing.Font("Microsoft Sans Serif", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.BTN_DESPLAZAR.Location = new System.Drawing.Point(264, 450);
+            this.BTN_DESPLAZAR.Margin = new System.Windows.Forms.Padding(2);
+            this.BTN_DESPLAZAR.Name = "BTN_DESPLAZAR";
+            this.BTN_DESPLAZAR.Size = new System.Drawing.Size(298, 56);
+            this.BTN_DESPLAZAR.TabIndex = 3;
+            this.BTN_DESPLAZAR.Text = "DESPLAZAR";
+            this.BTN_DESPLAZAR.UseVisualStyleBackColor = true;
+            // 
+            // Raqueta
+            // 
+            this.Raqueta.Image = ((System.Drawing.Image)(resources.GetObject("Raqueta.Image")));
+            this.Raqueta.Location = new System.Drawing.Point(536, 53);
+            this.Raqueta.Name = "Raqueta";
+            this.Raqueta.Size = new System.Drawing.Size(70, 180);
+            this.Raqueta.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Raqueta.TabIndex = 4;
+            this.Raqueta.TabStop = false;
+            // 
+            // button1
+            // 
+            this.button1.Font = new System.Drawing.Font("Microsoft Sans Serif", 35F);
+            this.button1.Location = new System.Drawing.Point(235, 315);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(276, 60);
+            this.button1.TabIndex = 5;
+            this.button1.Text = "DESPLAZA";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.BTN_DESPLAZAR_Click);
             // 
             // Form1
             // 
@@ -74,20 +97,25 @@
             this.AutoSize = true;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(740, 523);
-            this.Controls.Add(this.TMR_DESPLAZAR);
-            this.Controls.Add(this.IMG1);
+            this.Controls.Add(this.button1);
+            this.Controls.Add(this.BTN_DESPLAZAR);
+            this.Controls.Add(this.Raqueta);
+            this.Controls.Add(this.Pelota);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)(this.IMG1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Pelota)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Raqueta)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private System.Windows.Forms.PictureBox IMG1;
-        private System.Windows.Forms.Button TMR_DESPLAZAR;
+        private System.Windows.Forms.PictureBox Pelota;
+        private System.Windows.Forms.Button BTN_DESPLAZAR;
         public System.Windows.Forms.Timer TIMER_UNO;
+        private System.Windows.Forms.PictureBox Raqueta;
+        private System.Windows.Forms.Button button1;
     }
 }
 
