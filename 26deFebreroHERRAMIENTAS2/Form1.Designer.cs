@@ -45,7 +45,7 @@
             // 
             // Pelota
             // 
-            this.Pelota.BackColor = System.Drawing.Color.Transparent;
+            this.Pelota.BackColor = System.Drawing.Color.LawnGreen;
             this.Pelota.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Pelota.Cursor = System.Windows.Forms.Cursors.Arrow;
             this.Pelota.Image = ((System.Drawing.Image)(resources.GetObject("Pelota.Image")));
@@ -59,6 +59,7 @@
             // 
             // Raqueta
             // 
+            this.Raqueta.BackColor = System.Drawing.Color.LawnGreen;
             this.Raqueta.Image = ((System.Drawing.Image)(resources.GetObject("Raqueta.Image")));
             this.Raqueta.Location = new System.Drawing.Point(536, 53);
             this.Raqueta.Name = "Raqueta";
@@ -83,11 +84,14 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
+            this.BackColor = System.Drawing.Color.Lime;
+            this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(740, 523);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.Raqueta);
             this.Controls.Add(this.Pelota);
+            this.DoubleBuffered = true;
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
